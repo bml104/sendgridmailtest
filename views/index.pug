@@ -7,4 +7,20 @@ block content
   form(action='/mail', method='post')
     label please enter your name:
       input(type='text', name='username')
+    label please enter your email:
+      input(type='text', name='email')
+    label please enter your phone:
+      input(type='text', name='phone')
+    label please enter your request:
+      input(type='text', name='request')
+      select(name='department')
+        option(value='systems') System
+        option(value='network') Network
+        option(value='clinical') Clinical
+        option(value='helpdesk') Helpdesk
+      select(name="sev")
+        option(value='sev3') Sev 3
+        option(value='sev2') Sev 2
+        option(value='sev1') Sev 1
+
     button(type='submit') Submit 
