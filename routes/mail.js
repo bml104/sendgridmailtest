@@ -1,12 +1,11 @@
+//git update
 var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 sendgrid = require('@sendgrid/mail');
-sendgrid.setApiKey('na');
+sendgrid.setApiKey('add send grid key');
 router.use(bodyParser.urlencoded({ extended: false}));
-router.get('/', function(req, res, next) {
-  res.send('mail stuff');
-});
+
 
 
 router.post('/', function(req, res, next) {
@@ -30,6 +29,7 @@ router.post('/', function(req, res, next) {
      + 'Email: ' + email + '<br>'
      + 'Request: ' + request + '<br>',			//HTML content
   });
+  //res.redirect('https://google.com');
 });
 
 
