@@ -19,7 +19,7 @@ router.post('/', function(req, res, next) {
   var department=req.body.department;
   var sev=req.body.sev;
   sendgrid.send({
-    to: 'dennis.alonzo.johnson@gmail.com',					//receiver's email
+    to: 'hnson@gmail.com',					//receiver's email
     from: 'hd@hd.com',			//sender's email
     subject: "HD Request 1 - " + department + " " + sev, 				//Subject
     text: 'and finally' + user + 'test',		//content
